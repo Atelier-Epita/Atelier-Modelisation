@@ -35,5 +35,8 @@ thumb_up();
 
 /*
  Make your model here
+ Doc: https://openscad.org/cheatsheet/
 */
 epita("test", 8);
+
+
