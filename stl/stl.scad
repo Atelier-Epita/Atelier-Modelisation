@@ -92,10 +92,6 @@ module protospace(){
    import("protospace.stl");
 }
 
-module skull(){
-   import("skull.stl");
-}
-
 module spaceinvader_1(){
    import("space_invader_1.stl");
 }
@@ -133,6 +129,5 @@ module epita(t, size=5) {
         }
         translate([0,17.5,-0.1])
             cylinder(d=3, h=10);
-            
         }
 }
