@@ -37,6 +37,10 @@ thumb_up();
  Make your model here
  Doc: https://openscad.org/cheatsheet/
 */
-epita("test", 8);
-
+union() {
+    atelier();
+    translate([30,0,-3])
+    rotate([0,0,90])
+    stormtrooper();
+}
 

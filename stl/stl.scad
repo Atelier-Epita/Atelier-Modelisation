@@ -114,6 +114,22 @@ module thumb_up(){
    import("thumb_up.stl");
 }
 
+module atelier(t="L'Atelier") {
+  difference(){
+     union() {
+         cube([40,25,6], center=true);
+         translate([-20,0,0])
+         cylinder(h=6, r=12.5, center=true);
+     }
+     translate([-25, 0, 0])
+     cylinder(h=10, r=4, center=true);
+  }
+  color([0,0,0])
+  translate([-17, -3.25, 0])
+  linear_extrude(4)
+  text(t, size=6.5, font = "Liberation Sans:style=Bold");
+}
+
 module epita(t, size=5) {
     difference() {
         cylinder(d=40, h=4);
